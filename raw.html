@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Raw JSON Setlist</title>
+  </head>
+  <body>
+    <script language="javascript">
+      const jsonURL = "https://www.roberty.sgedu.site/hw09/setlist.json";
+
+      async function getSetlist()
+      {
+        const response = await fetch(jsonURL);
+        const data = await response.json();
+        return data;
+      }
+      
+      async function printSetlist(setlist)
+      {
+        setlistString = JSON.stringify(setlist);
+        document.getElementById("message").innerHTML = setlistString;
+      }
+      
+      getSetlist()
+        .then(setlist => printSetlist(setlist))
+        .catch(error => console.log("Caught exception: " + error));
+    </script>
+    <div id="message">Loading...</div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wedding Setlist</title>
+		<link rel="icon" href="icon.png">
+    <style>
+      body {
+        font-family: Futura;
+        margin: 10px;
+        padding: 10px;
+        background-color: #DAE3E5;
+        text-align: center;
+        
+      }
+			
+      .title {
+        display: inline-block;
+        font-weight: bold;
+        background-color: #507DBC;
+        width: auto;
+        color: white;
+        font-size: 18px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script language="javascript">
+		
+      async function getSetlist()
+      {
+        const response = await fetch("./setlist.json");
+        const data = await response.json();
+        return data;
+      }
+      
+      function printSetlist(setlist)
+      {
+        display = "";
+        for (let i = 0; i < setlist.length; i++) {
+          song = setlist[i];
+          display += "<div class='title'>" + song.title + "</div>" +
+                     "<br><b>Artist:</b> " + printArray(song.artist) + 
+                     "<br><b>Genre:</b> " + printArray(song.genre) + 
+                     "<br>Released " + song.year + "<br><br>";
+        }
+        document.getElementById("message").innerHTML = display;
+      }
+      
+      function printArray(array)
+      {
+        printed = array[0];
+        for (let i = 1; i < array.length; i++) {
+          printed += ", " + array[i];
+        }
+        return printed;
+      }
+      
+      getSetlist()
+        .then(setlist => printSetlist(setlist))
+        .catch(error => console.log("Caught exception: " + error));
+    </script>
+    <h1>Wedding Setlist</h1>
+    <div id="message">Loading...</div>
+  </body>
+</html>

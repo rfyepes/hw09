@@ -1,0 +1,92 @@
+[ 
+   {
+     "title": "Just the Way You Are",
+     "artist": ["Bruno Mars"],
+     "genre": ["Pop"],
+     "year": 2010
+   },
+   {
+     "title": "Locked Out of Heaven",
+     "artist": ["Bruno Mars"],
+     "genre": ["Pop", "Reggae Rock"],
+     "year": 2012
+   },
+   {
+     "title": "Marry You",
+     "artist": ["Bruno Mars"],
+     "genre": ["Pop", "Doo-wop"],
+     "year": 2011
+   },
+   {
+     "title": "Perfect",
+     "artist": ["Ed Sheeran"],
+     "genre": ["Pop"],
+     "year": 2017
+   },
+   {
+     "title": "Come Fly with Me",
+     "artist": ["Frank Sinatra"],
+     "genre": ["Jazz"],
+     "year": 1958
+   },
+   {
+     "title": "Fly Me to the Moon",
+     "artist": ["Frank Sinatra"],
+     "genre": ["Jazz"],
+     "year": 1954
+   },
+   {
+     "title": "Shallow",
+     "artist": ["Lady Gaga", "Bradley Cooper"],
+     "genre": ["Country", "Soundtrack"],
+     "year": 2018
+   },
+   {
+     "title": "Eclipse",
+     "artist": ["LOONA"],
+     "genre": ["K-Pop", "R&B"],
+     "year": 2017
+   },
+   {
+     "title": "Sugar",
+     "artist": ["Maroon 5"],
+     "genre": ["Pop"],
+     "year": 2015
+   },
+   {
+     "title": "Kingdom Come",
+     "artist": ["Red Velvet"],
+     "genre": ["K-Pop"],
+     "year": 2017
+   },
+   {
+     "title": "Perfect 10",
+     "artist": ["Red Velvet"],
+     "genre": ["K-Pop", "R&B"],
+     "year": 2017
+   },
+   {
+     "title": "Enchanted",
+     "artist": ["Taylor Swift"],
+     "genre": ["Country"],
+     "year": 2010
+   },
+   {
+     "title": "Lover",
+     "artist": ["Taylor Swift"],
+     "genre": ["Pop"],
+     "year": 2019
+   },
+   {
+     "title": "Love Story",
+     "artist": ["Taylor Swift"],
+     "genre": ["Country"],
+     "year": 2008
+   },
+   {
+     "title": "Wildest Dreams",
+     "artist": ["Taylor Swift"],
+     "genre": ["Pop"],
+     "year": 2014
+   }
+]
